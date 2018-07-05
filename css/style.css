@@ -1,0 +1,352 @@
+
+
+
+h2,h6{
+    font-weight: 420;
+}
+p{
+    font-family: Product Sans,Roboto,arial,sans-serif;;
+    font-size: 17px;
+    font-weight: 200;
+    color: #77838f;
+    margin-bottom: 5px;
+}
+a:hover{
+    color: white;
+    text-decoration: none;
+}
+section{
+
+    width: 100%;
+    position: relative;
+    
+}
+label{
+    color: black;
+}
+
+/* ..............................Slider section .........................*/
+.feature{
+
+
+    overflow: hidden;
+    z-index: -10;
+    position: absolute;
+    background-color:black;
+    width: 100%;
+
+}
+.feature a{
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.carousel-inner img{
+    background-size: cover;
+    
+}
+
+.form-field{
+    background-color: rgba(255, 255, 255, 0.534);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 20px 1px rgb(10, 10, 10,0.6);
+    position: fixed;
+    z-index: 5;
+    right: 2%;
+    top: 100px;
+    width: 25%;
+  
+}
+.section-feature h2{
+    color: white;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.767);
+}
+.section-feature h1{
+    color: #ffed00;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.767);
+}
+.section-feature{
+    min-height: 86vh;
+    width: 100%;
+    padding-top: 15vh;
+    padding-bottom: 10vh;
+}
+
+
+.btn-slider{
+    width: auto;
+    height: auto;
+    color: white;
+    cursor: pointer;
+    padding: 15px 30px;
+    transition: ease-in-out 300ms;
+}
+.btn-slider:hover{
+    background-color: rgba(255, 255, 255, 0.877);
+    transition: ease-in-out 300ms;
+    color: black;
+   
+}
+.btn-slider a:hover{
+    color: black;
+}
+/* .......................................  About Section ........................... */
+.about-section{
+    padding-top: 30px;
+    background-color: #105c7d;
+    
+}
+
+/* ..............................Service section .........................*/
+    .service-section{
+        padding-top: 80px;
+        
+    }
+    .service-header{
+        padding-left: 10%;
+    }
+  .price-box{
+      width: 250px;
+      height: 500px;
+      text-align: center;
+     border-top: #105c7d  10px solid;
+      background-color: white;
+      position: relative;
+      box-shadow: 0px 0px 5px rgb(20, 20, 20,0.3);
+      padding: 0px 15px;
+      margin: 80px auto 30px auto; 
+
+  }
+  .price-box-icon{
+      width: 80px;
+      height: 80px;
+      border-radius: 40px;
+      border:5px rgb(202, 202, 202) solid;
+      position: absolute;
+      top: -40px;
+      left: 80px;
+      overflow: hidden;
+  }
+  .section-price{
+     
+      display: flex;
+      flex-wrap: wrap;
+
+  }
+  .price-content{
+      padding-top: 50px;
+     
+  }
+/* ....................................why-section .................................*/
+.why-section{
+    padding-top: 60px;
+    background-color: #105c7d;
+    height: auto;
+}
+  i{
+      text-shadow: 2px 2px 8px #13121252;
+  }
+  .why-box{
+      display: flex;
+    
+      align-items: center;
+        color: 
+        white;
+     
+  }
+
+  .why-box div{
+      padding: 5px;
+      text-align: center;
+       
+  }
+
+ /* ...........................................perfection-section.........................*/
+ .perfection-section{
+     width: 100%;
+     height: auto;
+     
+ }
+ .perfe-section{
+    background-color: white;
+    text-align: center;
+ 
+}
+ .section-oneSide {
+    margin: 0px;
+    padding: 10px 0px;
+    align-items: center;
+    background-color: white;
+    min-height: 80vh;
+    padding: 30px;
+ }
+
+ .perImg{
+     background-image: url('../images/pre.png');
+     background-attachment: fixed;
+     overflow: hidden;
+     background-repeat: no-repeat;
+     background-size: auto 600px;
+     background-position: top;
+     background-size: cover;
+     
+    
+ }
+ /* .....................................Feature Section ......................*/
+ .feature-section{
+     background-image: url('../images/pexels-photo-853168.jpeg');
+     background-attachment: fixed;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position:top ;
+     padding-top: 70px;
+     justify-content: center;
+     align-items: center;
+     margin: auto;
+     text-align: center;
+     filter: grayscale(20%);
+     padding-bottom: 20px;
+     padding-left: 10%;
+    
+    
+ }
+ .fe-box{
+     height: 200px;
+     width: 200px;
+     padding: 30px;
+    background-color: rgb(255, 255, 255,0.8);
+     color: rgb(0, 0, 0);
+     text-align: center;
+     overflow: hidden;
+     transition:  ease-in-out 0.5s;
+     align-items: center;
+     cursor: pointer;
+     border-radius: 100px;
+     margin: 10px;
+     transition: all ease-in-out 100ms;
+ }
+ .feature-section .col-md-2{
+     width: auto;
+     margin-left: 2%;
+    
+ }
+ .fe-box:hover{
+    
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, 0.685);
+    color: white;
+    transition: all ease-in-out 200ms;
+ }
+ /*  ...... Blog and News section......*/
+
+
+ .des{
+     width: 200px;
+     height: 100px;
+     background-color: white;
+     filter: blur(2px);
+ }
+/*  ...... footer content here ......*/
+
+footer{
+    width: 100%;
+    min-height: 150px;
+    background-color: rgb(19, 20, 20);
+   
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+    bottom: 0px;
+}
+footer img{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    opacity: 0.1;
+    left: -20px;
+    background-size: cover;
+}
+footer p{
+    color:#9c9c9c;
+}
+.footer-2{
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    border-top: rgb(136, 136, 136,0.4) 1px solid;
+
+}
+footer a{
+    color: #9c9c9c !important;
+    font-size: 16px;
+}
+footer a:hover{
+    color: white !important;
+}
+.footer-payment img{
+    width: 100px;
+    opacity: 1;
+}
+/*  ...... Bootstrap modification section ......*/
+
+
+.list-group-item{
+    padding: .4rem 1.25rem;
+  }
+  .bg-secondary ,.btn-primary{
+    background-color: #105c7d !important;
+    transition: all ease-in-out 700ms;
+}
+.display-4{
+    font-weight: 450;
+    font-size: 35px;
+  }
+  .row{
+      margin: 0px;
+  }
+.card-img-top{
+    height: 200px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    a{
+        color: white;
+        font-size: 15px;
+        font-weight: 400;
+    }
+    
+    .section-feature h1{
+        font-size: 35px;
+    }
+    .feature{
+        height: auto;
+    }
+   
+     .form-field{
+         padding: 20px 30px;
+        
+         margin: auto;
+     }
+     .btn-slider{
+         margin: auto;
+         padding: 5px 10px;
+         align-content: center;
+     }
+    footer{
+        position: relative;
+    }
+    footer img{
+        display: none;
+    }
+    .blog-section{
+        margin-bottom: 0px;
+    }
+} 
+@media only screen and (max-width: 786px) {
+    .feature video{
+        width: 1200px;
+     }
+}
