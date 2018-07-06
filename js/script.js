@@ -8,9 +8,11 @@ $(window).scroll(function(){
 
     if(wScroll > $('.about-section').offset().top){
         $('.navbar').addClass('bg-secondary');
+        $('footer').show();
     }
     else{
         $('.navbar').removeClass('bg-secondary');
+        $('footer').hide();
     }
     if(wScroll > $('#why').offset()
     .top-wHight/2

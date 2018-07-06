@@ -3,6 +3,7 @@
 
 h2,h6{
     font-weight: 420;
+    opacity: 0.9;
 }
 p{
     font-family: Product Sans,Roboto,arial,sans-serif;;
@@ -49,7 +50,7 @@ label{
 
 .form-field{
     background-color: rgba(255, 255, 255, 0.534);
-    padding: 30px;
+    padding: 10px 20px;
     border-radius: 10px;
     box-shadow: 1px 2px 20px 1px rgb(10, 10, 10,0.6);
     position: fixed;
@@ -57,8 +58,10 @@ label{
     right: 2%;
     top: 100px;
     width: 25%;
-  
+    border-top: #105c7d 5px solid; 
+    border-bottom: #105c7d 5px solid; 
 }
+
 .section-feature h2{
     color: white;
     text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.767);
@@ -95,14 +98,31 @@ label{
 /* .......................................  About Section ........................... */
 .about-section{
     padding-top: 30px;
+    padding-left: 40px;
     background-color: #105c7d;
     
+}
+.about-section h2{
+    font-size: 1.75rem;
+    line-height: 1.5;
+    font-weight: 700;
+    margin: 0;
+    width: 100%;
+    font-size: 35px;
 }
 
 /* ..............................Service section .........................*/
     .service-section{
         padding-top: 80px;
         
+    }
+    .service-section h2{
+        font-size: 1.75rem;
+        line-height: 1.5;
+        font-weight: 700;
+        margin: 0;
+        width: 100%;
+        font-size: 35px;
     }
     .service-header{
         padding-left: 10%;
@@ -164,6 +184,14 @@ label{
   }
 
  /* ...........................................perfection-section.........................*/
+ .perfection-section h2{
+    font-size: 1.75rem;
+    line-height: 1.5;
+    font-weight: 700;
+    margin: 0;
+    width: 100%;
+    font-size: 35px;
+ }
  .perfection-section{
      width: 100%;
      height: auto;
@@ -179,7 +207,7 @@ label{
     padding: 10px 0px;
     align-items: center;
     background-color: white;
-    min-height: 80vh;
+    min-height: 70vh;
     padding: 30px;
  }
 
@@ -212,6 +240,14 @@ label{
     
     
  }
+ .feature-section h2{
+    font-size: 1.75rem;
+    line-height: 1.5;
+    font-weight: 700;
+    margin: 0;
+    width: 100%;
+    font-size: 35px;
+ }
  .fe-box{
      height: 200px;
      width: 200px;
@@ -239,7 +275,58 @@ label{
     color: white;
     transition: all ease-in-out 200ms;
  }
- /*  ...... Blog and News section......*/
+ .carousel{
+     height: 200px;
+ }
+ .carousel-caption-slide{
+     position: absolute;
+     top: 10px;
+     padding: 20px 80px;
+     
+ }
+ .carousel-item img{
+ filter: opacity(0%) !important;
+ }
+ /* ..............................story-section...................*/
+ .story-section{
+     height: 20vh;
+     background-color: rgb(53, 53, 53);
+ }
+ .story-box{
+     height: 20vh;
+     padding: 20px;
+ }
+/*  .........................newsletter-section ........................*/
+.newsletter-section{
+    height: 70vh;
+    background-image: url('../images/wb11.jpeg');
+    background-size: cover;
+    background-position: top;
+    margin-bottom: 170px;
+    text-align: center;
+    padding-top: 15vh;
+    color: white;
+
+}
+.newsletterInput{
+    margin-top: 20px;
+}
+.newsletterInput input{
+    padding: 6px 20px;
+    width: auto;
+    
+  
+}
+
+    
+.newsletter-section h2{
+    font-size: 1.75rem;
+line-height: 1.5;
+font-weight: 700;
+margin: 0;
+width: 100%;
+font-size: 35px;
+}
 
 
  .des{
@@ -248,17 +335,20 @@ label{
      background-color: white;
      filter: blur(2px);
  }
+
+
 /*  ...... footer content here ......*/
 
 footer{
     width: 100%;
-    min-height: 150px;
+    min-height: auto;
     background-color: rgb(19, 20, 20);
    
-    position: relative;
+    position: fixed;
     overflow: hidden;
-    z-index: 10;
+    z-index: -10;
     bottom: 0px;
+    border-top: 5px rgb(24, 24, 24) solid;
 }
 footer img{
     position: absolute;
@@ -288,6 +378,9 @@ footer a:hover{
 .footer-payment img{
     width: 100px;
     opacity: 1;
+}
+.modal{
+    margin-top: 100px;
 }
 /*  ...... Bootstrap modification section ......*/
 
@@ -327,9 +420,10 @@ footer a:hover{
    
      .form-field{
          padding: 20px 30px;
-        
          margin: auto;
-     }
+         left: 500px;
+        }
+
      .btn-slider{
          margin: auto;
          padding: 5px 10px;
