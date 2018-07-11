@@ -62,7 +62,9 @@ label{
     border-top: #105c7d 5px solid; 
     border-bottom: #105c7d 5px solid; 
 }
-
+.formMobile{
+    display: none;
+}
 .section-feature h2{
     color: white;
     text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.767);
@@ -427,10 +429,12 @@ footer a:hover{
         }
    
      .form-field{
-         padding: 20px 30px;
-         margin: auto;
-         left: 500px;
+        width: 80%;
+        display: none;
+        top: 150px;
+        background-color: rgba(255, 255, 255);
         }
+       
 
      .btn-slider{
          margin: auto;
@@ -450,6 +454,13 @@ footer a:hover{
     }
     .col-9{
         max-width: 100%;
+    }
+    .formMobile{
+        position: fixed;
+        right: 0px;
+        z-index: 10;
+        opacity: 0.6;
+        display: block;
     }
 } 
 @media only screen and (max-width: 786px) {

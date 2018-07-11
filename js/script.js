@@ -28,6 +28,11 @@ $(window).scroll(function(){
 
 
 });
+$(document).ready(function(){
+    $('.formMobile').click(function(){
+        $('.form-field').toggle();
+    })
+})
 
 
 
