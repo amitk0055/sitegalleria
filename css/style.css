@@ -37,6 +37,7 @@ label{
     width: 100%;
 
 }
+
 .feature a{
     color: white;
     font-size: 16px;
@@ -65,6 +66,9 @@ label{
 .section-feature h2{
     color: white;
     text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.767);
+    font-weight: 400 !important;
+    opacity: 0.9;
+    
 }
 .section-feature h1{
     color: #ffed00;
@@ -332,33 +336,19 @@ font-size: 35px;
 
 footer{
     width: 100%;
-    min-height: auto;
     background-color: rgb(19, 20, 20);
-   
+   background-image: url('../images/OM6QN31.png');
     position: fixed;
     overflow: hidden;
     z-index: -12;
     bottom: 0px;
     border-top: 5px rgb(24, 24, 24) solid;
 }
-footer img{
-    position: absolute;
-    top: 0px;
-    width: 100%;
-    opacity: 0.1;
-    left: -20px;
-    background-size: cover;
-}
+
 footer p{
     color:#9c9c9c;
 }
-.footer-2{
-    height: 50px;
-    width: 100%;
-    background-color: black;
-    border-top: rgb(136, 136, 136,0.4) 1px solid;
 
-}
 footer a{
     color: #9c9c9c !important;
     font-size: 16px;
@@ -366,9 +356,14 @@ footer a{
 footer a:hover{
     color: white !important;
 }
+.footer-payment{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
 .footer-payment img{
     width: 100px;
-    opacity: 1;
 }
 .btnTop{
     position: fixed;
@@ -409,7 +404,11 @@ footer a:hover{
     }
     
     .section-feature h1{
+        font-size: 35px;
+    }
+    .section-feature h2{
         font-size: 30px;
+        font-weight: 400 !important;
     }
     .feature{
         height: auto;
@@ -441,9 +440,7 @@ footer a:hover{
     footer{
         position: relative;
     }
-    footer img{
-        display: none;
-    }
+ 
     .blog-section{
         margin-bottom: 0px;
     }
