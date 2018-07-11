@@ -1,10 +1,10 @@
 
+ 
+
+    
 $(window).scroll(function(){
   
-    var wScroll=$(this).scrollTop();
-    
-    var wHight=$(this).height();
-  
+    let wScroll=$(this).scrollTop();
 
     if(wScroll > $('.about-section').offset().top){
         $('.navbar').addClass('bg-secondary');
@@ -14,18 +14,68 @@ $(window).scroll(function(){
         $('.navbar').removeClass('bg-secondary');
         $('footer').hide();
     }
-    if(wScroll > $('#why').offset()
-    .top-wHight/2
 
-){
-        $('.business').addClass('animated zoomIn');
+    if(wScroll>$('.why-section').offset().top-400){
+        $('.form-field').hide();
     }
+    else{
+        $('.form-field').show();
+    }
+    if(wScroll>$('.perfe-section').offset().top-100){
+        $('.form-field').show();
+    }
+// number counter 
+
+
 });
 
+
+
+function onTop(){
+window.scroll({
+    top: 0,
+    behavior: "smooth",
+    
+  });
+}
+
+// header shows on mobile
 $(document).ready(function(){
     $('#navButton').click(function(){
+    
         $('.navbar').addClass('bg-secondary');
     })
+var wScroll=$(window).scrollTop();
+    if(wScroll>$('.story-section').offset().top) {
+       
+        $('.count').each(function() {
+           $(this).prop('Counter',0).animate({
+               Counter: $(this).text()
+           }, {
+               duration: 4000,
+               easing: 'swing',
+               step: function (now) {
+                   $(this).text(Math.ceil(now));
+               }
+           });
+       });
+     
+ }
  });
 
+ 
+ // self invoking function
+
+ (function(){
+ window.onscroll=function(){
+y=window.pageYOffset;
+if(y>600)
+{
+    console.log('Hello my name is amit kumar');
+}
+ else{
+     console.log('What is tour name');
+ }
+}
+ }());
 

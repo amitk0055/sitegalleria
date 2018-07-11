@@ -159,29 +159,7 @@ label{
       padding-top: 50px;
      
   }
-/* ....................................why-section .................................*/
-.why-section{
-    padding-top: 60px;
-    background-color: #105c7d;
-    height: auto;
-}
-  i{
-      text-shadow: 2px 2px 8px #13121252;
-  }
-  .why-box{
-      display: flex;
-    
-      align-items: center;
-        color: 
-        white;
-     
-  }
 
-  .why-box div{
-      padding: 5px;
-      text-align: center;
-       
-  }
 
  /* ...........................................perfection-section.........................*/
  .perfection-section h2{
@@ -222,31 +200,29 @@ label{
      
     
  }
- /* .....................................Feature Section ......................*/
- .feature-section{
-     background-image: url('../images/pexels-photo-853168.jpeg');
-     background-attachment: fixed;
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-position:top ;
-     padding-top: 70px;
+ /* .....................................why Section ......................*/
+ .why-section{
+    background-color: white;
+     padding:30px 35px;
      justify-content: center;
      align-items: center;
      margin: auto;
      text-align: center;
      filter: grayscale(20%);
-     padding-bottom: 20px;
-     padding-left: 10%;
-    
-    
+       
  }
- .feature-section h2{
+ .why-section h2, .story-section h2{
     font-size: 1.75rem;
     line-height: 1.5;
     font-weight: 700;
     margin: 0;
     width: 100%;
     font-size: 35px;
+ }
+ .why-section p{
+     font-size: 16px;
+     color: #105c7d;
+     padding-bottom: 30px;
  }
  .fe-box{
      height: 200px;
@@ -263,9 +239,10 @@ label{
      margin: 10px;
      transition: all ease-in-out 100ms;
  }
- .feature-section .col-md-2{
+
+ .why-section .col-md-3{
      width: auto;
-     margin-left: 2%;
+     margin:auto;
     
  }
  .fe-box:hover{
@@ -289,12 +266,25 @@ label{
  }
  /* ..............................story-section...................*/
  .story-section{
-     height: 20vh;
+    background-image: url('../images/pexels-photo-853168.jpeg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:top ;
+     height: auto;
      background-color: rgb(53, 53, 53);
+     text-align: center;
+     padding-top:100px;
+    
  }
  .story-box{
      height: 20vh;
      padding: 20px;
+  
+ }
+ .story-box span{
+     color: white;
+     font-size: 30px;
  }
 /*  .........................newsletter-section ........................*/
 .newsletter-section{
@@ -378,6 +368,12 @@ footer a:hover{
 .footer-payment img{
     width: 100px;
     opacity: 1;
+}
+.btnTop{
+    position: fixed;
+    right: 30px;
+    bottom: 100px;
+    
 }
 .modal{
     margin-top: 100px;
