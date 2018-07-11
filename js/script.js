@@ -64,18 +64,4 @@ var wScroll=$(window).scrollTop();
  });
 
  
- // self invoking function
-
- (function(){
- window.onscroll=function(){
-y=window.pageYOffset;
-if(y>600)
-{
-    console.log('Hello my name is amit kumar');
-}
- else{
-     console.log('What is tour name');
- }
-}
- }());
 

@@ -274,7 +274,7 @@ label{
      height: auto;
      background-color: rgb(53, 53, 53);
      text-align: center;
-     padding-top:100px;
+     padding-top:50px;
     
  }
  .story-box{
@@ -295,6 +295,7 @@ label{
     margin-bottom: 170px;
     text-align: center;
     padding-top: 15vh;
+    padding-bottom: 15vh;
     color: white;
 
 }
@@ -408,11 +409,23 @@ footer a:hover{
     }
     
     .section-feature h1{
-        font-size: 35px;
+        font-size: 30px;
     }
     .feature{
         height: auto;
     }
+    .newsletter-section{
+        margin-bottom: 0px;
+    }
+    .about-section{
+        padding-left: 0px;
+    }
+    .service-section{
+        padding-top: 20px;
+    }
+        .service-header{
+            padding-left: 0px;
+        }
    
      .form-field{
          padding: 20px 30px;
@@ -433,6 +446,13 @@ footer a:hover{
     }
     .blog-section{
         margin-bottom: 0px;
+    }
+    .container{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .col-9{
+        max-width: 100%;
     }
 } 
 @media only screen and (max-width: 786px) {
