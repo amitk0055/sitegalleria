@@ -1,5 +1,7 @@
 
  
+wWidth=$( window ).width();
+
 
     
 $(window).scroll(function(){
@@ -21,16 +23,29 @@ $(window).scroll(function(){
     else{
         $('.form-field').show();
     }
+    if(wWidth< 600){
+        $('.form-field').hide();
+    }
     if(wScroll>$('.perfe-section').offset().top-100){
+        if(wWidth <600){
+            $('.form-field').hide();
+        } 
+        else{
         $('.form-field').show();
+        }
     }
 // number counter 
 
 
 });
+
 $(document).ready(function(){
     $('.formMobile').click(function(){
-        $('.form-field').toggle();
+        $('.form-field').toggle(function(){
+            $('.form-field').css({"right" : "10px"})
+        }
+        
+    )
     })
 })
 
@@ -45,11 +60,14 @@ window.scroll({
 }
 
 // header shows on mobile
+
 $(document).ready(function(){
     $('#navButton').click(function(){
     
         $('.navbar').addClass('bg-secondary');
     })
+
+    // number counter  
 var wScroll=$(window).scrollTop();
     if(wScroll>$('.story-section').offset().top) {
        
