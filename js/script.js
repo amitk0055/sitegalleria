@@ -2,8 +2,15 @@
  
 wWidth=$( window ).width();
 
-
-    
+if(wWidth<600){
+    var modal=document.getElementById('form-field');
+    window.onclick = function(event) {
+        if (event.target =modal) {
+            modal.style.display = "none";
+        }
+    }
+}
+  
 $(window).scroll(function(){
   
     let wScroll=$(this).scrollTop();
